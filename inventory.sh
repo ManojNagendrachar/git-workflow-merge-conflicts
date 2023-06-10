@@ -23,4 +23,4 @@ cron_file="/etc/cron.d/automation"
 crontab -u root $cron_file
 
 # Create or overwrite the cron file with the appropriate content and this will run at 10am everyday 
-echo "0 10 * * * root /root/git-workflow-merge-conflicts/automation.sh" > "$cron_file"
+echo "0 10 * * * root sh /root/git-workflow-merge-conflicts/automation.sh" > "$cron_file"
